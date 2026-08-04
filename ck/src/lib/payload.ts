@@ -58,7 +58,7 @@ export async function fetchPosts() {
 
 export async function fetchSite() {
   const payload = await getPayloadClient()
-  return payload.findGlobal({ slug: 'site' })
+  return payload.findGlobal({ slug: 'site-settings' })
 }
 
 export async function fetchFaqs() {

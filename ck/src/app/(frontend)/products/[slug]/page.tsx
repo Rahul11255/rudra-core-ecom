@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import RichText from "@/components/RichText";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { productMessage } from "@/components/ProductCard";
+import { productMessage } from "@/lib/productMessage";
+
 import { getProductBySlug, getProducts, getSiteSettings } from "@/lib/cms";
 
 type Params = { slug: string };

@@ -41,7 +41,7 @@ export function Hero({ home }: { home: HomeContent }) {
             </span>
           )}
           <h1 className="mt-5 text-5xl font-black tracking-tight sm:text-6xl lg:text-7xl">
-            {home.heroTitle.split(/\s*[·•]\s*/).map((word, i, arr) => (
+            {home.heroTitle.split(/\s*[·•]\s*/).map((word: any, i: any, arr: any) => (
               <span key={`${word}-${i}`}>
                 {word}
                 {i < arr.length - 1 && (
@@ -63,7 +63,7 @@ export function Hero({ home }: { home: HomeContent }) {
           </div>
           <div className="mt-8 flex items-center gap-6 text-sm text-muted-foreground">
             <div className="flex -space-x-2">
-              {["#FF8FB8", "#FFD166", "#7C5CFC", "#7ED957"].map((c) => (
+              {["#FF8FB8", "#FFD166", "#7C5CFC", "#7ED957"].map((c : any) => (
                 <span key={c} className="h-8 w-8 rounded-full border-2 border-white" style={{ background: c }} />
               ))}
             </div>
@@ -73,7 +73,7 @@ export function Hero({ home }: { home: HomeContent }) {
         <div className="relative animate-fade-up">
           <div className="absolute -inset-6 rounded-[3rem] bg-brand-gradient opacity-20 blur-3xl" />
           <div className="relative h-[420px] overflow-hidden rounded-[2.5rem] bg-card shadow-glow sm:h-[520px]">
-            {heroImages.map((image, index) => (
+            {heroImages.map((image: any, index: any) => (
               <Image
                 key={image}
                 src={image}
@@ -108,7 +108,7 @@ export function Categories({ categories, heading }: { categories: Category[]; he
           <SectionHeading eyebrow={heading.eyebrow || "Categories"} title={<Title h={heading} />} sub={heading.description} />
         </Reveal>
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-          {categories.map((c, i) => (
+          {categories.map((c: any, i: any) => (
             <Reveal key={c.slug} delay={i * 0.04}>
               <a href={wa(`Hi! I'd like to see your ${c.name} collection.`)} target="_blank" rel="noopener noreferrer"
                  className={`group relative block overflow-hidden rounded-3xl bg-gradient-to-br ${c.tint} p-5 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card`}>
@@ -143,7 +143,7 @@ export function Products({ products, heading }: { products: Product[]; heading: 
           <WhatsAppButton message="Hi! Please share your full catalogue." size="sm">View full catalogue</WhatsAppButton>
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {products.map((p, i) => (
+          {products.map((p: any, i: any) => (
             <Reveal key={p.slug} delay={i * 0.05}><ProductCard p={p} /></Reveal>
           ))}
         </div>
@@ -168,7 +168,7 @@ export function DIYKit({ home }: { home: HomeContent }) {
           <h2 className="mt-4 text-3xl font-black sm:text-4xl lg:text-5xl">{home.kitHeading}</h2>
           <p className="mt-4 text-muted-foreground">{home.kitDescription}</p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-            {home.kitItems.map((it) => (
+            {home.kitItems.map((it: any) => (
               <li key={it.t} className="flex items-center gap-3 rounded-2xl bg-card px-4 py-3 shadow-soft">
                 <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-muted text-lg">{it.i}</span>
                 <span className="font-semibold">{it.t}</span>
@@ -190,7 +190,7 @@ export function WhyChoose({ home }: { home: HomeContent }) {
           <SectionHeading eyebrow={home.whyChooseSection.eyebrow || "Why us"} title={<Title h={home.whyChooseSection} />} sub={home.whyChooseSection.description} />
         </Reveal>
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {home.whyChoose.map((w, i) => (
+          {home.whyChoose.map((w: any, i: any) => (
             <Reveal key={w.title} delay={i * 0.04}>
               <div className="group rounded-3xl bg-card p-6 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
                 <div className="grid h-12 w-12 place-items-center rounded-2xl bg-muted text-2xl transition-transform duration-300 group-hover:scale-110">{w.icon}</div>
@@ -217,7 +217,7 @@ export function HowItWorks({ home }: { home: HomeContent }) {
           {home.howItWorksSection.description && <p className="mt-3 text-white/85">{home.howItWorksSection.description}</p>}
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {steps.map((s, i) => (
+          {steps.map((s: any, i: any) => (
             <Reveal key={s.title} delay={i * 0.05}>
               <div className="relative rounded-3xl bg-white/10 p-6 backdrop-blur-md ring-1 ring-white/20">
                 <span className="text-4xl font-black text-white/30">{s.n}</span>
@@ -244,7 +244,7 @@ export function Gallery({ home }: { home: HomeContent }) {
           <SectionHeading eyebrow={home.gallerySection.eyebrow || "Gallery"} title={<Title h={home.gallerySection} />} sub={home.gallerySection.description} />
         </Reveal>
         <div className="mt-12 columns-2 gap-4 sm:columns-3 lg:columns-4 [&>*]:mb-4">
-          {home.galleryImages.map((src, i) => (
+          {home.galleryImages.map((src: any, i: any) => (
             <div key={`${src}-${i}`} className="break-inside-avoid overflow-hidden rounded-3xl bg-card shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
               <Image src={src} alt="Customer painted DIY POP toy" width={1024} height={1024} className="h-full w-full object-cover" />
             </div>
@@ -263,7 +263,7 @@ export function Testimonials({ testimonials, heading }: { testimonials: { name: 
           <SectionHeading eyebrow={heading.eyebrow || "Reviews"} title={<Title h={heading} />} sub={heading.description} />
         </Reveal>
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          {testimonials.map((t, i) => (
+          {testimonials.map((t: any, i: any) => (
             <Reveal key={t.name} delay={i * 0.05}>
               <figure className="flex flex-col gap-4 rounded-3xl bg-card p-7 shadow-soft">
                 <div className="text-yellow text-lg">★★★★★</div>
@@ -290,7 +290,7 @@ export function FAQ({ faqs, heading }: { faqs: { q: string; a: string }[]; headi
           <SectionHeading eyebrow={heading.eyebrow || "FAQ"} title={<Title h={heading} />} sub={heading.description} />
         </Reveal>
         <div className="mt-10 space-y-3">
-          {faqs.map((f, i) => {
+          {faqs.map((f: any, i: any) => {
             const isOpen = open === i;
             return (
               <div key={f.q} className="overflow-hidden rounded-3xl bg-card shadow-soft transition-all">
@@ -331,7 +331,7 @@ export function ContactCTA({ heading, description, buttonText }: { heading?: str
                 { i: "📞", t: s.phone, sub: s.workingHours },
                 { i: "📍", t: s.address, sub: "Ships pan-India" },
                 { i: "💬", t: "WhatsApp us anytime", sub: `+${s.whatsapp}` },
-              ].filter((c) => Boolean(c.t)).map((c) => (
+              ].filter((c) => Boolean(c.t)).map((c: any) => (
                 <div key={c.t} className="flex items-center gap-3 rounded-2xl bg-white/15 px-4 py-3 backdrop-blur">
                   <span className="text-xl">{c.i}</span>
                   <div><div className="font-bold">{c.t}</div><div className="text-xs text-white/80">{c.sub}</div></div>

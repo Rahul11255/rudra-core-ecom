@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { WhatsAppButton } from "./WhatsAppButton";
+import { productMessage } from "@/lib/productMessage";
 import type { Product } from "@/lib/data";
 
 function Stars({ n }: { n: number }) {
@@ -15,9 +16,6 @@ function Stars({ n }: { n: number }) {
   );
 }
 
-export function productMessage(p: Product) {
-  return p.whatsappMessage?.trim() || `Hi! I'd like to order: ${p.name} (${p.price}).`;
-}
 
 export default function ProductCard({ p }: { p: Product }) {
   return (
