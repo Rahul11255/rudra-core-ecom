@@ -22,7 +22,7 @@ export default async function AboutPage() {
           <p className="mt-4 text-muted-foreground">{about.description}</p>
           {about.stats.length > 0 && (
             <div className="mt-6 grid grid-cols-3 gap-4 max-w-md">
-              {about.stats.map((s) => (
+              {about.stats.map((s:any) => (
                 <div key={s.label} className="rounded-3xl bg-card p-4 text-center shadow-soft">
                   <div className="text-2xl font-black text-brand">{s.value}</div>
                   <div className="text-xs text-muted-foreground">{s.label}</div>
@@ -48,7 +48,7 @@ export default async function AboutPage() {
           <h2 className="text-2xl font-black text-pink">{about.visionHeading}</h2>
           <p className="mt-3 text-muted-foreground">{about.vision}</p>
         </div>
-        {about.extraSections.map((s) => (
+        {about.extraSections.map((s:any) => (
           <div key={s.title} className="rounded-[2rem] bg-card p-8 shadow-soft md:col-span-2">
             <h2 className="text-2xl font-black">{s.title}</h2>
             <p className="mt-3 text-muted-foreground">{s.body}</p>
