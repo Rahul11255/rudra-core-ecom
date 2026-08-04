@@ -1,9 +1,10 @@
+
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductCard from "@/components/ProductCard";
 import { getProducts, getSiteSettings } from "@/lib/cms";
 
-export const revalidate = 0;
+export const revalidate = 60; // revalidate this page every 60 seconds
 
 export async function generateMetadata(): Promise<Metadata> {
   const s = await getSiteSettings();

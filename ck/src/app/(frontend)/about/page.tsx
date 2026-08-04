@@ -1,3 +1,5 @@
+export const revalidate = 60; // revalidate this page every 60 seconds
+
 import type { Metadata } from "next";
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
