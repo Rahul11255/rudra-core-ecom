@@ -1,0 +1,10 @@
+node_modules
+.next
+.env
+.env.local
+*.db
+*.db-journal
+/media
+/public/media
+.payload
+/src/payload-types.ts.bak
