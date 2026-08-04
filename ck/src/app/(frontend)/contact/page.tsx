@@ -1,3 +1,5 @@
+export const revalidate = 60; // revalidate this page every 60 seconds
+
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ContactForm from "@/components/ContactForm";

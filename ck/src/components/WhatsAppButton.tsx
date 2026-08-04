@@ -42,7 +42,7 @@ export function FloatingWA() {
   const wa = useWhatsApp();
   return (
     <a
-      href={wa("Hi Chitrakala! I'd like to order a DIY POP toy.")}
+      href={wa("Hi Rudra! I'd like to Order Your product.")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Order on WhatsApp"

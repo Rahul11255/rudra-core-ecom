@@ -5,7 +5,7 @@ import { WhatsAppIcon } from "./WhatsAppButton";
 import { useSettings, useWhatsApp } from "./SettingsProvider";
 import type { Category } from "@/lib/data";
 
-export default function Footer({ categories = [] }: { categories?: Category[] }) {
+export default function   Footer({ categories = [] }: { categories?: Category[] }) {
   const settings = useSettings();
   const wa = useWhatsApp();
 

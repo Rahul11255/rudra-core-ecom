@@ -322,7 +322,7 @@ export function ContactCTA({ heading, description, buttonText }: { heading?: str
               <h2 className="text-3xl font-black sm:text-4xl lg:text-5xl">{heading || "Need help choosing?"}</h2>
               <p className="mt-3 max-w-xl text-white/85">{description}</p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <WhatsAppButton size="lg" className="!bg-white !text-whatsapp-dark hover:!bg-white" message="Hi! I need help choosing a kit.">{buttonText || "Chat on WhatsApp"}</WhatsAppButton>
+                <WhatsAppButton size="lg" className="!bg-white !text-whatsapp-dark hover:!bg-white" message="Hi! Rudra .">{buttonText || "Chat on WhatsApp"}</WhatsAppButton>
                 <a href={`mailto:${s.email}`} className="inline-flex items-center gap-2 rounded-full bg-white/15 px-5 py-3 text-sm font-semibold backdrop-blur hover:bg-white/25">✉️ {s.email}</a>
               </div>
             </div>

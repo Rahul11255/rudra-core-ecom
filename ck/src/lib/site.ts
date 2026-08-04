@@ -7,7 +7,7 @@
  */
 export const site = {
   companyName: "Rudracore",
-  tagline: "DIY Paint Your Own POP Toys & Kits",
+  tagline: "I'd like to Order Your product.",
   url: "https://Rudracore.in",
   description:
     "Handcrafted DIY Paint Your Own POP toys, fridge magnets, religious idols, cartoon figures, animal toys, keychains and creative kits. Order on WhatsApp.",
