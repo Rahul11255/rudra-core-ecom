@@ -6,19 +6,19 @@
  * the database has not been seeded yet.
  */
 export const site = {
-  companyName: "Chitrakala",
+  companyName: "Rudracore",
   tagline: "DIY Paint Your Own POP Toys & Kits",
-  url: "https://chitrakala.in",
+  url: "https://Rudracore.in",
   description:
     "Handcrafted DIY Paint Your Own POP toys, fridge magnets, religious idols, cartoon figures, animal toys, keychains and creative kits. Order on WhatsApp.",
   footerText: "Handcrafted DIY POP toys, idols & creative kits. Made in India with love.",
   whatsapp: "919354081946",
-  email: "hello@chitrakala.in",
+  email: "hello@Rudracore.in",
   phone: "+91 9354081946",
   workingHours: "Mon–Sat · 10am–7pm",
   address: "Made in India · Ships pan-India",
-  instagram: "https://instagram.com/chitrakala",
-  facebook: "https://facebook.com/chitrakala",
+  instagram: "https://instagram.com/Rudracore",
+  facebook: "https://facebook.com/Rudracore",
   linkedin: "",
   youtube: "",
   locale: "en_IN",
