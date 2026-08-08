@@ -34,35 +34,6 @@ export const Media: CollectionConfig = {
     ],
 
     focalPoint: true,
-
-    imageSizes: [
-      {
-        name: 'thumbnail',
-        width: 400,
-        height: 400,
-        position: 'center',
-      },
-      {
-        name: 'card',
-        width: 800,
-        height: 800,
-        position: 'center',
-      },
-      {
-        name: 'wide',
-        width: 1600,
-        height: 900,
-        position: 'center',
-      },
-      {
-        name: 'og',
-        width: 1200,
-        height: 630,
-        position: 'center',
-      },
-    ],
-
-    adminThumbnail: 'thumbnail',
   },
 
   fields: [
@@ -71,8 +42,7 @@ export const Media: CollectionConfig = {
       type: 'text',
       required: true,
       admin: {
-        description:
-          'Alternative text used for accessibility and SEO.',
+        description: 'Alternative text used for accessibility and SEO.',
       },
     },
     {
